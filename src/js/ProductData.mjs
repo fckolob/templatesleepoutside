@@ -11,7 +11,7 @@ export default class ProductData {
     this.category = category;
 
     // Check if we're in production (Netlify)
-    const isProduction = window.location.hostname !== "localhost" && window.location.hostname !== "127.0.01";
+    const isProduction = window.location.hostname === "team06x.netlify.app" ;
 
     // For production (Netlify), use absolute path from root
     if (isProduction) {
